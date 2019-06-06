@@ -1,0 +1,39 @@
+<html>
+  <style>
+    .wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    form {
+      border: 1px solid #818080;
+      padding: 100px;
+    }
+    span {
+      display: inline-block;
+      width: 100px;
+    }
+    .sub-btn {
+      margin-top: 50px;
+    }
+    textarea, input {
+      border:1px solid #cfcccc;
+      width: 200px;
+    }
+  </style>
+<body>
+  <div class="wrap">
+    <form action="http://127.0.0.1:8081/process_post" method="POST">
+      <div>
+        <span>收件人邮箱: </span><input type="text" name="to_email"><br>
+      </div>
+      <br>
+      <div>
+        <span>邮件内容: </span><textarea name="email_content"></textarea>
+      </div>
+      <input class="sub-btn" type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
