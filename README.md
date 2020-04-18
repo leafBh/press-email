@@ -7,5 +7,6 @@ cnpm install nodemailer
 
 ## 下载后启动项目
 npm install
+cnpm install nodemailer
 node express.js
 

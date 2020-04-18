@@ -14,6 +14,7 @@ app.post('/process_post', urlencodedParser, function (req, res) {
    // 输出 JSON 格式
    let toEmail = req.body.to_email
    let emailContent = req.body.email_content
+   console.log(req.body)
    res.send("发送成功!")
    main(toEmail, emailContent)
 })
@@ -24,8 +25,8 @@ const main = function(toEmail, emailContent){
     port: 465, // SMTP端口
     secure: true, // true for 465, false for other ports
     auth: {
-      user: "1051558519@qq.com", // 发件人邮箱
-      pass: "eidztfqknbxobaig" // 发件人的smtp授权码
+      user: "xxx", // 发件人邮箱
+      pass: "xxx" // 发件人的smtp授权码
     }
   });
   // 邮件信息
